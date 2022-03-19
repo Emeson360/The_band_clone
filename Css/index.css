@@ -367,37 +367,3 @@ footer a {
     }
     
 }
-
-
-
-
-
-
-
-
-
-
-/* For tablet 
-
-@media screen and (max-width: 768px) {
-    .imgText {
-        bottom: 143px;
-        left: 26%;
-    }
-
-    .content {
-        width: 98%;
-    }
-
-    .bookings {
-        width: 96%;
-    }
-
-    .tourPlaces {
-        width: 96%;
-    }
-
-    .contact {
-        width: 96%;
-    }
-}
