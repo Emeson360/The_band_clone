@@ -1,0 +1,551 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navBar {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 1;
+}
+
+.navBar a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 10px 30px;
+
+}
+
+.navBar a:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.mobileNav {
+    display: none;
+    background-color: black;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 1;
+}
+
+.mobileNav a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 10px 30px;
+}
+
+.mobileNav a:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.headerImg img {
+    width: 100%;
+    position: relative;
+}
+
+.imgText {
+    position: absolute;
+    bottom: 5px;
+    left: 38%;
+    
+}
+
+.imgText p, .imgText h3 {
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.content {
+    width: 60%;
+    margin: auto;
+    min-height: 700px;
+    margin-top: 95px;
+}
+
+.band h2, .grey{
+    text-align: center;
+}
+
+.band h2 {
+    font-weight: 400;
+    margin-bottom: 18px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.grey {
+    color: #ccc;
+    margin-bottom: 18px;
+}
+
+.band p {
+    font-size: 18px;
+}
+
+.justify {
+    text-align: justify;
+    margin-bottom: 70px;
+}
+
+.members {
+    display: flex;
+    justify-content: space-evenly;
+    /* width: 100%; */
+    text-align: center;
+}
+
+.member1 img {
+    width: 70%;
+}
+
+
+.tourContainer {
+    background-color: black;
+    padding-top: 75px;
+    padding-bottom: 110px;
+}
+
+.tourContainer h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+.bookings {
+    background-color: white;
+    color: #666;
+    width: 60%;
+    margin: auto;
+    margin-top: 65px;
+}
+
+.red {
+    background-color: red;
+    color: white;
+    padding: 2px 5px;
+}
+
+.november {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.black {
+    background-color: black;
+    color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 60%;
+    margin-top: 10px;
+    margin-right: 60px;
+}
+
+.bookings p:not(.black) {
+    padding: 10px 10px;
+    
+}
+
+.bookings p:not(.november p) {
+    border-bottom: 1px solid #ccc;
+}
+
+
+.tourPlaces {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.tourPlaces img {
+    width: 100%;
+}
+
+.places {
+    width: 32%;
+    background-color: white;
+    color: black;
+}
+
+.places h5, p, button {
+    margin: 10px 15px;
+    font-size: 17px;
+}
+
+.light {
+    color: #888;
+}
+
+.places button {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+}
+
+.contact {
+    width: 60%;
+    margin: auto;
+    padding-top: 90px;
+    padding-bottom: 120px;
+}
+
+.contact h2 {
+    font-weight: 200;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+.contact p.contHead {
+    margin-bottom: 30px;
+    color: grey;
+}
+
+.message {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.contHead {
+    text-align: center;
+}
+
+.text {
+    width: 45%;
+    
+}
+
+.text p {
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.input {
+    width: 45%;
+}
+
+.same {
+    width: 47.5%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+
+}
+
+.only {
+    margin-right: 10px;
+}
+
+.long {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    float: right;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.map img {
+    width: 100%;
+}
+
+footer p {
+    text-align: center;
+    padding: 60px 0px;
+    color: #999;
+}
+
+footer a {
+    color: #999;
+}
+
+
+/* For Tablet */
+
+@media screen and (max-width: 768px) {
+
+    .imgText {
+        bottom: 120px;
+        left: 28%;
+    }
+
+    .content {
+        width: 94%;
+    }
+
+    .bookings {
+        width: 94%;
+    }
+
+    .tourPlaces {
+        width: 94%;
+    }
+
+    .contact {
+        width: 94%;
+    }
+    
+}
+
+/* For mobile */
+
+@media screen and (max-width: 425px) {
+
+    .mobileNav {
+        display: block;
+    }
+
+    .navBar {
+        display: none;
+    }
+
+    .headerImg img {
+        height: 220px;
+    }
+
+    .imgText {
+        bottom: 260px;
+        left: 9%;
+    }
+
+    .content {
+        width: 98%;
+    }
+
+    .members {
+        display: block;
+    }
+
+    .tourPlaces {
+        display: block;
+    }
+
+    .places {
+        width: 99%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .message {
+        display: block;
+    }
+
+    .text {
+        width: 98%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    .input {
+        width: 98%;
+        margin: auto;
+    }
+
+    .same {
+        width: 100%;
+    }
+    
+}
+
+
+
+/* For tablet */
+/* @media screen and (max-width: 768px) {
+
+    .imgText {
+        bottom: 118px;
+        left: 28%;
+    }
+
+    .content {
+        width: 98%;
+    }
+
+    .bookings {
+        width: 95%;
+        
+    }
+
+    .tourPlaces {
+        width: 95%;
+        
+    }
+
+    .contact {
+        width: 96%;
+        
+    }   
+    
+}
+
+
+/* For mobile 
+@media screen and (max-width: 425px) {
+    .navBar {
+        display: none;
+    }
+
+    .mobileNav {
+        display: block;
+    }
+
+    .headerImg img {
+        height: 300px;
+    }
+
+    .imgText {
+        bottom: 190px;
+        left: 12%;
+    }
+
+    .members {
+        display: block;
+    }
+
+    .member1 img {
+        width: 50%;
+    }
+
+    .bookings {
+        width: 94%;
+    }
+
+    .tourPlaces {
+        display: block;
+    }
+
+    .places {
+        width: 98%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .message {
+        display: block;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .input {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .input input:not(.btn) {
+        width: 100%;
+    }
+} */
+
+
+
+
+
+
+
+/* For tablet 
+
+@media screen and (max-width: 768px) {
+    .imgText {
+        bottom: 143px;
+        left: 26%;
+    }
+
+    .content {
+        width: 98%;
+    }
+
+    .bookings {
+        width: 96%;
+    }
+
+    .tourPlaces {
+        width: 96%;
+    }
+
+    .contact {
+        width: 96%;
+    }
+}
+
+
+/* For moble 
+
+@media screen and (max-width: 425px) {
+
+    .navBar {
+        display: none;
+    }
+
+    .mobileNav {
+        display: block;
+    }
+
+    .headerImg img {
+        height: 300px;
+
+    }
+
+    .imgText {
+        bottom: 190px;
+        left: 12%;
+    }
+
+    .members {
+        display: block;
+    }
+
+    .tourPlaces {
+        display: block;
+        width: 100%;
+    }
+
+    .places {
+        width: 92%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .contact {
+        width: 98%;
+    }
+
+    .message {
+        display: block;
+    }
+
+    .text {
+        width: 98%;
+        margin-bottom: 25px;
+    }
+
+    .input {
+        width: 98%;
+    }
+    input:not(.btn) {
+        width: 100%;
+    }
+    
+}
